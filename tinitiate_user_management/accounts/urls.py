@@ -9,6 +9,7 @@ urlpatterns = [
 
 # Register http://127.0.0.1:8000/accounts/users
 # Login  http://127.0.0.1:8000/accounts/token/login
+# login with POST
 # Email: admin@admin.com SuperUser: admin, pass: Test!2345678
 # http://127.0.0.1:8000/accounts/users/me/
 # http://127.0.0.1:8000/accounts/token/logout/

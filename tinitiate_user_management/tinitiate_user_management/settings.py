@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'djoser',
     'accounts', # Email: admin@admin.com SuperUser: admin, pass: Test!2345678
+    'securecontent',
 ]
 
 # DJOSER Settings

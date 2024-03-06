@@ -102,7 +102,7 @@ using `poetry run python manage.py startapp securedata`
 * Register
   * `http://127.0.0.1:8000/accounts/users`
 * Login and Get Token
-  * `http://127.0.0.1:8000/accounts/api/v1/token/login
+  * `http://127.0.0.1:8000/accounts/token/login` USING POST
   * Pass UserName Password with **Body JSON** `{"username": "admin","password": "Test!2345678"}`
   * Read the TOKEN from the response.
 ##### Check secured content

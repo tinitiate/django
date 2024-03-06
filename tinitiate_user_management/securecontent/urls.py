@@ -8,6 +8,7 @@ urlpatterns = [
 ]
 
 # Check is Auth or Not http://127.0.0.1:8000/securecontent/securedata
+# HTTP METHOD: GET
 # Body:
 # {"username": "admin"} 
 # Header: 
