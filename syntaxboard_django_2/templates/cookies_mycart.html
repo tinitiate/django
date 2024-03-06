@@ -1,0 +1,18 @@
+<html>
+    <body>
+        {% if cookie_status == 1 %}
+            <h1>Cookie is Set Retriving Shopping Cart Values</h1>
+
+            <p>User Name: {{ user_id }}</p>
+            <br><br>
+
+            <h2>Shopping Cart Details</h2>
+            {% for choice in CheckBox_Selected %}
+                <p>{{ choice }}</p>
+            {% endfor %}
+        {% else %}
+            <h1>Cookie is Not Set</h1>
+        {%endif%}
+    </body>
+
+</html>

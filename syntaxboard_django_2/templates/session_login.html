@@ -1,0 +1,13 @@
+<form method="post" action="">
+
+    {% csrf_token %}
+
+    <p>Type abc for User / and anything for Password</p>
+    <b>User name:</b><br>
+    {{form.userid.as_text}}<br><br>
+    <b>Password: </b><br>
+    {{form.passwd.as_text}}<br><br>
+    <hr>
+
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,21 @@
+<!-- 
+    File Name: inheritance_caller_table.html
+    Desc:      Display Data in a Table
+-->
+{% extends "django_template_base.html" %}
+
+{% block content %}
+<div class="w3-container">
+    <h2>Table Demo</h2>
+    <p>Course and Details</p>
+    <table class="w3-table-all">
+        {% for rowval in data %} 
+            <tr>
+                {% for colval in rowval %} 
+              <th>{{ colval }}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+  </table>
+</div>
+{% endblock %}

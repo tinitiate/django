@@ -1,0 +1,31 @@
+<!-- 
+    File Name: inheritance_caller_accordian.html
+    Desc:      Display Data in with JS Control Names
+-->
+{% extends "template_inheritance_base.html" %}
+
+{% block content %}
+<div class="w3-accordion w3-light-grey">
+    {% for control_name,h,d in data %}
+    <button onclick="myFunction('{{control_name}}')" 
+             class="w3-btn-block w3-left-align w3-blue">
+    {{h}}</button>
+
+    <div id="{{control_name}}" class="w3-accordion-content w3-container">
+      <p>{{d}}</p>
+    </div>
+    <br><br><br>
+    {% endfor %}
+</div>
+{% endblock %}
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>

@@ -1,0 +1,31 @@
+<!-- File: simple-template.html -->
+<html>
+  <head>
+    <title>{{ l_title }}</title>
+  </head>
+    
+  <body>
+    {% if course_name == "PYTHON" %}
+        <h1 style="color:red;">{{ course_name }}</h1>
+        <ul>
+        {% for topic in course_list %}
+            <li>{{ topic }}</li>
+        {% endfor %}
+        </ul>
+    {% elif course_name == "JAVA" %}
+        <h1 style="color:orange;">{{ course_name }}</h1>
+        <ol>
+        {% for topic in course_list %}
+            <li>{{ topic }}</li>
+        {% endfor %}
+        </ol>
+    {% else %}
+        <h1 style="color:blue;">{{ course_name }}</h1>
+        <ol type="i">
+        {% for topic in course_list %}
+            <li>{{ topic }}</li>
+        {% endfor %}
+        </ol>
+    {%endif%}
+  </body>
+</html>

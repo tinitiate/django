@@ -18,6 +18,7 @@ projectname/
     │   └── __init__.py
     ├── models.py
     ├── tests.py
+    ├── urls.py
     └── views.py
 ```
 

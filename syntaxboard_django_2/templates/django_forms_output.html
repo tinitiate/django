@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h1>Django Forms from POST method</h1>
+        
+        <h2>Text Boxes Data</h2>
+        <p>User Name: {{ user_id }}</p>
+        <p>Password: {{ pass_wd }}</p>
+        <br><br>
+
+        <h2>Date Data</h2>
+        <p>Date: {{ date_data }}</p>
+        <br><br>
+
+        <h2>Drop Down Data</h2>
+        <p>{{ DropDown_data }}</p>
+        
+        <br><br>
+        <h2>Radio Option Data</h2>
+        <p>{{ Radio_Selected }}</p>
+
+        <br><br>
+        <h2>Multi Select Text Box</h2>
+        {% for choice in MultiList_Selected %}
+            <p>{{ choice }}</p>
+        {% endfor %}
+        
+        <br><br>
+        <h2>Check Box</h2>
+        {% for choice in CheckBox_Selected %}
+            <p>{{ choice }}</p>
+        {% endfor %}
+
+    </body>
+</html>

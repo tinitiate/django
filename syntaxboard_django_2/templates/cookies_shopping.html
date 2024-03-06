@@ -1,0 +1,12 @@
+<form method="post" action="">
+
+    {% csrf_token %}
+
+    <b>User name:</b><br>
+    {{form.userid.as_text}}<br><br>
+    <hr>
+    <b>Checkbox:</b><br>
+    {{form.CheckBox}}<br><br><br>
+
+    <button type="submit">Submit now</button>
+</form>

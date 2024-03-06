@@ -1,0 +1,12 @@
+<html>
+    <body>
+        {% if l_user %}
+            <h1>Welcome USER: {{ l_user }} !, You have access to this Secure Page</h1>
+            <p>Hello User</p>
+            <p>To logout <a href="/django_sessions/logout/">click here</a></p>
+            <br><br>
+        {% else %}
+            <h1>You are not logged in, Cannot access this page</h1>
+        {%endif%}
+    </body>
+</html>
